@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+a:active, a:hover, a:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+input:active, input:hover, input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+:root {
+    --color-bg: #34304c;
+    --color-bg2: #534d7a;
+    --color-highlight: #fff;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.goo {
+    font-size: 3rem;
+    line-height: 1.35;
+    display: inline;
+    -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+    background: var(--color-highlight);
+    padding: 0.5rem 1rem;
+    filter: url('#goo');
+}
+
+.container{
+    padding: 7.5vh 100px 0 100px;
+    width: 100%;
+}
+
+.goo:focus {
+    outline: 0;
+}
+
+.edit {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--color-bg2);
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: var(--color-highlight);
+    border-radius: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+html{
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--color-bg);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 65% 30%;
+    grid-column-gap: 5%;
+
+    .phone{
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    .left{
+        display: flex;
+        flex-direction: column;
+
+        .edit_text{
+            height: 35%;
+            display: flex;
+            flex-direction: column;
+
+            h1{
+                height: 30vh;
+                overflow: scroll;
+                overflow-x: hidden;
+                padding: 1rem 0.5rem;
+            }
+
+            h1::-webkit-scrollbar {
+                width: 0px;
+            };
+
+            .edit{
+                white-space: nowrap;
+                width: 165px;
+
+            }
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            img{
+                width: 200px;
+                margin-top: 20px;
+            }
+
+            img:hover{
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+footer{
+    display: flex;
+}
+
+
