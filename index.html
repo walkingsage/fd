@@ -8,15 +8,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="js/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="left">
             <div class="edit_text">
                 <!-- partial:index.partial.html -->
-                <div class="edit">EDIT TEXT BELOW</div>
+                <div class="edit">
+                    <p>EDIT TEXT BELOW</p> 
+                </div>
         
                 <h1>
                     <div class="goo" contenteditable="true" maxlebght="10">Secretum app – share yor secrets with friends and strangers anonymously</div>
@@ -45,9 +49,25 @@
                 </div>
             </div>
         </div>
-        <img class="phone" src="images/mobile.png" alt="App present">
+        <div class="mobile">
+            <div style="display: none;" class="info__mb">
+                <div class="appstore">
+                    <a href="#"><img src="images/appstore.svg" alt="appstore"></a>
+                </div>
+                <div class="googleplay">
+                    <a href="#"><img src="images/googleplay.svg" alt="googleplay"></a>
+                </div>
+                <div class="qrscan">
+                    <img src="images/qrscan.png" alt="qrscan">
+                </div>
+            </div>
+            <img class="phone" src="images/mobile.png" alt="App present">
+        </div>
     </div>  
     <div style="display: none;" class="popup">
+        <div id="exit">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </div>
         <div class="contant">
             <div style="display: none;" class="contact inside">
                 <h2><span class="upper">C</span>ontact US </h2>
@@ -57,8 +77,169 @@
             </div>
             <div style="display: none;" class="privacy inside">
                 <h2><span class="upper">P</span>rivacy</h2>
-                <div class="text">
-                    
+                <div class="aurem">
+                    <div class="header__content"> 
+                        <div class="top">
+                            <Career style="color: #ffffff" class="title">Privacy Statement</p>
+                        </div>
+                        <div class="conditions__text">
+                            <div class="contant__imprint">
+                                <p class="about">Your right to data protection is our obligation. The protection of your privacy when processing your data is a matter of importance to Covestro that is taken into consideration in all of our business processes. Therefore, we would like to take this opportunity to explain the basic principles we apply in handling your personal data. This and possibly additional information is always provided whenever such data is collected. <br> In the following, we refer to the legal provisions of the EU General Data Protection Regulation as an example. To ensure better readability, this global data protection declaration itself does not refer to national – often comparable – regulations. If necessary, this and, where applicable, other information is indicated in a country-specific declaration (can be found in the column "You are here").</p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="about">If not otherwise indicated in the following sections, Art. 6 (1, b) of the General Data Protection Regulation (GDPR) forms the legal basis for the handling of your data in order to provide you the services you request.</p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Collection and processing of information</p>
+                                <p class="about">You can use the Covestro website without providing any personal data to us. However, some offers and services found on our websites do require the provision of personal information for their use.</p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Recording of technical access data</p>
+                                <p class="about">When you visit our websites, Covestro collects data and information through an automated system. However, in general, this information is not used to identify the users of our websites. Technical access data stored in the log files of the server includes, for instance, the following data:</p>
+                                <ul class="contact__sub">
+                                    <li class="about">Information on the user’s browser type and version</li>
+                                    <li class="about">The user’s operating system</li>
+                                    <li class="about">The user's internet service provider</li>
+                                    <li class="about">The user’s IP address</li>
+                                    <li class="about">Date and time of access</li>
+                                    <li class="about">Websites by which the user’s system was referred to our website (referrer)</li>
+                                    <li class="about">Websites accessed by the user’s system through our website.</li>
+                                </ul>
+                                <p class="about">The data is processed to deliver the content of our website, to ensure the functionality of our IT systems and the optimization of our website, as well as to safeguard our legitimate interests in order to arrange for clarification in the event of unauthorized or attempted access to our website (Art. 6 (1, f GDPR).</p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Cookies</p>
+                                <p class="about">Our websites use cookies. These are files saved on the user's computer system by their web browser. When a website is accessed, the cookies can be transmitted to this website and therefore allow an assignment of the user. Cookies help to simplify the use of websites for users.</p>
+                                <p class="about">It is always possible to refuse the use of cookies by changing the browser settings. Set cookies can be deleted at any time.</p>
+                                <p class="about">We would like to note that, if you deactivate cookies, you may not be able to use all of the functions of our website to their fullest extent.</p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Cookies on this website*</p>
+                                <p class="about">Data saved for the aforementioned technical reasons may be analyzed for statistical purposes, although the individual user will remain anonymous.</p>
+                                <p class="about">* Cookies that are regularly deleted at the end of a session are not listed here.</p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Google Analytics</p>
+                                <p class="about">Google Analytics is used on our website. The integration and functioning of this service is explained below.</p>
+                                <p class="about">Information stored by Google Analytics cookies includes e.g. the time when the website was visited, the frequency of the respective website visits and the access path to the site. To determine this, Google first captures the IP address of the user. However, on our website, IP anonymization is activated. As a result, within member states of the European Union or other contracting states to the Agreement on the European Economic Area, your IP address will be truncated by Google prior to transmission to the United States; e.g. by deleting the last octet of IPv4 On our behalf, Google will use the above-mentioned information to evaluate your use of the website, to compile reports on website activity and to provide other services related to website activity and internet usage to the website operator. The IP address transmitted by your browser as part of Google Analytics will not be merged with other Google data. Google is also certified in the EU-US Privacy Shield, so that an appropriate level of data protection is established for your data in the USA.</p>
+                                <p class="about">You can prevent Google Analytics from using cookies by selecting the appropriate settings in your browser (“Private Mode”, found under Settings on most browsers). It should be noted once again, however, that you may not be able to make full use of all functions of this website in this case.</p>
+                                <p class="about">In addition, you may prevent the collecting of the data generated by the cookie in relation to the use of the website (including your IP address) as well as the processing of this data by Google with a download and installation of the browser plug-in available at the following link: <a href="http://tools.google.com/dlpage/gaoptout?hl=en.">http://tools.google.com/dlpage/gaoptout?hl=en.</a></p>
+                                <p class="about">Additional information on data protection in relation to Google Analytics can be found directly on Google.</p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Qualtrics Cookie</p>
+                                <p class="about">We use a software from a company called Qualtrics to provide customer satisfaction surveys to visitors of our website. Website / App Feedback stores certain data inside cookies. This can include the Site History cookie, Prevent Repeated Display cookie, a cookie that indicates that we have a Pop Under, a cookie that stores history data if local Storage is disabled, and a cookie that tracks user events.</p>
+                                <p class="about">You can customize the settings for collection and use of information for Qualtrics in your cookie settings when allowing the Google cookie (ga_FPC). Your browser settings allow you alternatively to delete cookies or prevent cookies from being stored on your computer or mobile device without your express permission. You can find more information about cookie settings in the "Help" section of your browser.</p>
+                                <p class="about">Source: <a href="https://www.qualtrics.com/support/website-app-feedback/getting-started-with-website-app-feedback/website-app-feedback-browser-cookies/">https://www.qualtrics.com/support/website-app-feedback/getting-started-with-website-app-feedback/website-app-feedback-browser-cookies/</a></p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">DMP tag</p>
+                                <p class="about">We use the third party technology "DMP tag" of The ADEX GmbH, Berlin ourselves to anonymously collect information about your usage behavior and to provide this anonymous information the presentation of Online Behavioral Advertising. You can customize the settings for collection and use of information for Google in the Google Ad Settings in your cookie settings. You can also customize the settings for collection and use of information via the technology of The ADEX in your cookie settings or by clicking the following link: <a href="http://de.theadex.com/company/consumer-opt-out/#opt-in-out">http://de.theadex.com/company/consumer-opt-out/#opt-in-out</a></p>
+                                <p class="about">Alternatively, you can opt out of the settings for collection and use of information by activating or deactivating The ADEX GmbH, Berlin (listed as ADEX) as a provider in the central preference manager of YourOnlineChoices (<a href="http://www.youronlinechoices.com/de/praferenzmanagement">http://www.youronlinechoices.com/de/praferenzmanagement</a>).</p>   
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Facebook</p>
+                                <p class="about">We use the so-called “Facebook Pixel” of the Facebook social network on our website, which is operated by Facebook Inc., 1 Hacker Way, Menlo Park, CA 94025, USA, or if you reside in the EU, Facebook Ireland Ltd., 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Ireland ("Facebook"). We use this tool also based on your approval (art. 6 para. 1, p. 1 lit. a GDPR). We use the Facebook pixel to be able to show you personalized advertising on Facebook and to analyze your user behavior on our website. You can withdraw your consent at any time with effect for the future. To do this, simply use one of the listed opt-out options.</p>
+                                <p class="about">If you connect to our website, then the Facebook pixel is triggered when connected to our website and one of our cookies, which collects the recorded data, is placed on your terminal (so-called first party cookie). In addition, Facebook as well as other companies directly place cookies (so-called third party cookies). Web beacons and other storage technologies may also be used. This means that a so-called cookie is placed on your terminal.</p>
+                                <p class="about">The Facebook pixel enables us to understand the effectiveness of the Facebook advertisements (so-called “Facebook ads”) and your interaction with our website for statistical and market research purposes. By using the Facebook pixel we can, for example, identify whether you were transferred to our website after the click on the Facebook ad and how you integrated with our website (so-called “conversion”). By using the Facebook pixel, we can specify you and additional visitors of our website as a target group for Facebook ads. Therefore, we are using the Facebook pixel to achieve a better customer approach on Facebook. Because the Facebook ads that are placed by us will only be transferred to those Facebook users who have shown an interest in our offerings or who show certain characteristics (e.g. interest in certain subjects or products, which are determined based on the visited websites, so-called "custom audiences through website"). We also want to ensure that our Facebook ads are in accordance with your interests and that they do not bother you.</p>
+                                <p class="about">A variety of event and conversion data are recorded for this purpose on our website, e.g. which sub- pages you are visiting or how you interact with our website. This means, that we analyze your activities on our website and we are using this analysis for a personalized advertisement.</p>
+                                <p class="about">If you log in subsequently at Facebook or if you are logged in at Facebook when visiting our website, this visit will be recorded on our website with your Facebook profile. However, the data will be converted to number chains immediately during the recording ("hashed"). These data do not permit any conclusions about you. However, we point out that these data are also stored and processed by Facebook. Facebook can use this information for their own market research and advertising purposes. We do not influence this process.</p>
+                                <p class="about">Facebook is certified in accordance with the EU-US privacy shield. This ensures that a protection level comparable to the European data protection law exists (<a href="https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active">https://www.privacyshield.gov/participant?id=a2zt0000000GnywAAC&status=Active</a>). The Facebook data usage directive is applicable to the data processing by Facebook. It includes general information for the presentation of Facebook ads: <a href="https://www.facebook.com/policy.php">https://www.facebook.com/policy.php</a>. Detailed information about the Facebook pixel and its functionality can be found in the Facebook support area: <a href="https://www.facebook.com/business/help/651294705016616">https://www.facebook.com/business/help/651294705016616</a>.</p>
+                                <p class="about">To set the type of advertisements that can be shown to you by Facebook, you can call-up the page established by Facebook and can follow the notifications to the settings of use-based advertising: <a href="https://www.facebook.com/settings?tab=ads">https://www.facebook.com/settings?tab=ads</a>. The settings are independent of the platform, i.e. they will be assumed by all devices such as desktop computers or mobile devices. General information by Facebook about the handling of cookies can be found here: <a href="https://www.facebook.com/policies/cookies/">https://www.facebook.com/policies/cookies/</a></p>
+                                <p class="about">You can prevent the recording by the Facebook pixel and the use of your data for the presentation of Facebook ads and withdraw your consent. Please, click here: Deactivate Facebook pixels</p>
+                                <p class="about">An “opt-out cookie will be stored on your device if you deactivate the Facebook pixel. You must click on the link again if you delete the cookies in this browser. However, this opt-out only works within the browser currently used by you and only for our website. You can also visit the following websites to cancel these and other interest-based <br> advertisement: <a href="http://www.networkadvertising.org/choices/">http://www.networkadvertising.org/choices/</a>; <a href="http://www.youronlinechoices.com/">http://www.youronlinechoices.com/</a></p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">LinkedIn</p>
+                                <p class="about">We place advertisements on the social network “LinkedIn” (LinkedIn Ireland Unlimited, Company Wilton Plaza, Wilton Place, Dublin 2 Ireland). Our advertisements are delivered by LinkedIn to the target groups. During the planning of the campaign, we determine the criteria that the target group must fulfill. We can select within the following options: Locations, companies, age or gender, education, professional experience and interests. In this connection we do not process personal data of the members and we are not receiving any access to these data.</p>
+                                <p class="about">The user will be transferred to our website if she/he clicks on one of our advertisements. If you connect to our website, then the LinkedIn pixel is triggered when connected to our website and one of our cookies will be placed on your terminal (so-called first party cookie).</p>
+                                <p class="about">As explained in our cookie guideline, we are using cookies and similar technologies (e.g. web beacons, pixels, display tags and device identifications) to identify you and/or your device(s) internal, external and across several services and devices. We also permit certain third parties to use cookies in accordance with our cookie guideline. You can control cookies through your browser settings and other tools. You can reject our usage of cookies and similar technologies, which track your behavior on other websites for advertising purposes of third parties. The function for the rejection for visitors can be found here (<a href="https://www.linkedin.com/psettings/guest-controls">https://www.linkedin.com/psettings/guest-controls</a>).</p>
+                                <p class="about">LinkedIn is responsible for the data processing in connection with the delivery of our advertisements within the social network. Detailed information about the data processing of LinkedIn can be found here: <a href="https://www.linkedin.com/legal/privacy-policya/">https://www.linkedin.com/legal/privacy-policya/</a>.</p>    
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Personal Information</p>
+                                <p class="about">Other personal information is only collected if you provide it to us, for instance by filling out a form, sending e-mails, while placing an order for services or products, or while making an inquiry or requesting materials.</p>
+                                <p class="about">This also includes customer surveys which Covestro sends out several times a year, subject to their consent. You can find more details in the right-hand column of this page under "You are here".</p>   
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Registration on our websites (if applicable)</p>
+                                <p class="about">If you take advantage of the opportunity to register on our website and provide us with personal information, the data entered into the input fields will be transmitted to the Covestro entities responsible for processing the data.</p>
+                                <p class="about">When registering on our website, your IP address and the date and time of registration are saved. The purpose of this is to prevent the misuse of the services.</p>
+                                <p class="about">The registration of the data is required for the provision of content or services. Registered persons may delete or change their saved data at any time. Affected persons may obtain information on their saved personal information at any time.</p>   
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Contact options</p>
+                                <p class="about">Our website includes a contact form that can be used to contact us electronically. If you choose this option to contact us, personal information you provide will be saved automatically. Data is saved only for the purpose of processing or contacting the person concerned.</p>
+                                <p class="about">Alternatively, you can also contact us at the provided telephone number or in writing via the provided address.</p>    
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Newsletter</p>
+                                <p class="about">If you subscribe to our company newsletter, the data you enter in the input fields will be submitted to the Covestro entities responsible for processing the data.</p>
+                                <p class="about">When registering for our newsletter, your IP address and the date and time of registration are saved. This is done to prevent a misuse of the services or of the individual’s e-mail address.</p>
+                                <p class="about">This data is only used to send the newsletter. The affected person can cancel their newsletter registration at any time. Also a revoke of their given consent to the storage of their personal information is possible at any time. For this purpose, a link is provided in each newsletter.</p>   
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Disclosure of data for the purpose of order processing</p>
+                                <p class="about">In some cases, we use specialized service providers to process your data. These providers only process personal information on our behalf, acting strictly in accordance with our instructions and on the basis of corresponding controller-processor-contracts.</p>    
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Data processing outside the EU / EEA</p>
+                                <p class="about">In some cases, your data may also be processed in countries outside the European Union (“EU”) or European Economic Area (“EEA”), areas which may have a lower level of data protection than the EU. In such cases, we ensure that a sufficient level of protection for your data is guaranteed through, for example, contractual agreements with our contractors for ensuring they provide a sufficient level of protection for your data, or we ask you for your explicit consent.</p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Storage of your data</p>
+                                <p class="about">We store personal data as long as necessary to carry out a service you have requested or to which you have given your consent, unless we are subject to other legal obligations such as commercial or tax law retention periods or those related to ongoing court proceedings. (Website log files 2 years, contact enquiries-Response Center -6 years)</p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Data security</p>
+                                <p class="about">Data you provide to us is protected using suitable technical and organizational measures, with the objective of securing it against accidental or intentional manipulation, loss, destruction, unauthorized access, or unauthorized disclosure to third parties. Our security measures are continuously reviewed and improved in accordance with technological developments and organizational possibilities.</p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Information about your rights</p>
+                                <p class="about">Information about your rights</p>
+                                <p class="about">You have the right to:</p>
+                                <ul class="contant__sub">
+                                    <li class="about">receive information on your personal data stored by us;</li>
+                                    <li class="about">request the rectification or erasure of your personal data or a restriction of the processing;</li>
+                                    <li class="about">object to a processing that serves our legitimate interest, a public interest, or profiling, unless we can demonstrate compelling legitimate grounds for this processing that outweigh your interests, rights, and freedoms, or the processing serves to assert, exercise, or defend legal claims;</li>
+                                    <li class="about">have your data transmitted to the extent regulated by law, such as in Art. 20 GDPR, and</li>
+                                    <li class="about">submit a complaint to a supervising authority;</li>
+                                </ul>
+                                <p class="about">You can withdraw your consent to the collection, processing, and use of your personal data at any time, with future effect. For more information, see the individual sections that describe data processing based on your consent.</p>
+                                <p class="about">A written letter sent to the Group Data Privacy Office is sufficient (for address and contact form see below).</p>   
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Protecting the privacy of children</p>
+                                <p class="about">We do not knowingly collect personal data of children. Typically, we have no way of knowing how old visitors to our site are. Since it is highly important to us to protect children as they use the internet, we advise all parents and legal guardians to instruct children in a safe and responsible use of the internet. Children should not transmit personal data to Covestro without the express consent of their parents or legal guardians.</p>
+                            </div>
+                            <div class="contant__imprint">
+                                <p class="subtitle">Contact</p>
+                                <div class="contant__sub">
+                                    <p class="about">Diese Webseite wird von Capital Two Aktiengesellschaft betrieben.</p>
+                                    <p class="about">Elektronischer</p>
+                                    <p class="about">Kontakt: <a href="mailto:info@capital2.de">info@capital2.de</a></p>
+                                    <p class="about">Telefon: <a href="tel:+49 173 6788186">+49 173 6788186</a></p>
+                                    <p class="about">Mo. – So. von 00:00 bis 00:00 Uhr</p>   
+                                </div>
+                                <div class="contant__sub">
+                                    <p class="about">Die Capital Two AG wird gesetzlich durch den Vorstand (Valeria Jostin) vertreten.</p>
+                                    <p class="about">Vorsitzender des Aufsichtsrats: xx</p>
+                                </div>
+                                <p class="about">Aufsichtsratsmitglieder:</p>
+                                <p class="about">I. Michail Kantor</p>
+                                <p class="about">II. Milorad Rastovic</p>
+                                <p class="about">III. Mahnic Izmir</p>
+                                <div class="contant__sub">
+                                    <p class="about">Sitz und Registergericht: xx HRB xxxx</p>
+                                    <p class="about">Umsatzsteueridentifikationsnummer: DExxxxx</p>
+                                </div>
+                                <div class="contant__sub">
+                                    <p class="about">Berufsbezeichnung: Darlehensvermittler mit Lizenz nach § 34d Abs. 3 GewO (produktakzessorisch);</p>
+                                    <p class="about">Berufsrechtliche Regelungen: § 34 d Gewerbeordnung</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div style="display: none;" class="terms inside">
@@ -67,10 +248,6 @@
                     
                 </div>
             </div>
-        </div>
-        <div id="exit">
-            <span class="line1"></span>
-            <span class="line2"></span>
         </div>
     </div>
 </body>

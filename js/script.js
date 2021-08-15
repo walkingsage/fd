@@ -5,17 +5,25 @@ popup = document.querySelector('.popup'),
 contact = document.querySelector('.contact'),
 privacy = document.querySelector('.privacy'),
 terms = document.querySelector('.terms'),
-exitBtn = document.getElementById('exit');
+exitBtn = document.getElementById('exit'),
+aurem = document.querySelectorAll('.aurem');
 
 let popupOpen = false,
 cookieAcceps = false;
 
+$(document).ready(function () {
+    let userheight = window.innerHeight;
 
+    popup.style.height = `${userheight}px`;
 
+    aurem.forEach(elem => {
+        elem.style.height = `${userheight - 65}px`;
+    });
+});
 
 contactBtn.addEventListener('click', () => {
     if(popupOpen == false){
-        popup.style.display = 'flex';
+        popup.style.display = 'grid';
         contact.style.display = 'grid';
         popupOpen = true;
     }
@@ -26,7 +34,7 @@ contactBtn.addEventListener('click', () => {
 
 privacyBtn.addEventListener('click', () => {
     if(popupOpen == false){
-        popup.style.display = 'flex';
+        popup.style.display = 'grid';
         privacy.style.display = 'grid';
         popupOpen = true;
     }
@@ -37,7 +45,7 @@ privacyBtn.addEventListener('click', () => {
 
 termsBtn.addEventListener('click', () => {
     if(popupOpen == false){
-        popup.style.display = 'flex';
+        popup.style.display = 'grid';
         terms.style.display = 'grid';
         popupOpen = true;
     }
