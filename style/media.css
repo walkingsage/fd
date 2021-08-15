@@ -17,9 +17,12 @@
   footer {
     font-size: 12px;
     grid-template-columns: 50% 20% 30% !important; } }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1180px) {
   html {
     overflow: scroll; }
+
+  .popup {
+    position: fixed !important; }
 
   html::-webkit-scrollbar-track {
     border-radius: 5px;
@@ -46,19 +49,29 @@
     grid-template-columns: 100%; }
     body .container .mobile {
       display: grid;
-      align-items: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       justify-items: center;
       grid-template-columns: 50% 50%; }
       body .container .mobile .info__mb {
         display: grid !important; }
         body .container .mobile .info__mb div {
           width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
-          justify-content: center; }
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
           body .container .mobile .info__mb div a {
             width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
-            justify-content: center; }
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
         body .container .mobile .info__mb img {
           width: 40%;
           min-width: 190px;
@@ -66,7 +79,10 @@
         body .container .mobile .info__mb .appstore:hover, body .container .mobile .info__mb .googleplay:hover {
           cursor: pointer; }
     body .container .left {
-      flex-direction: row; }
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; }
       body .container .left .info {
         display: none; }
       body .container .left .edit_text {
@@ -74,5 +90,73 @@
         width: 100%; }
         body .container .left .edit_text h1 {
           max-height: 100% !important; } }
+@media screen and (max-width: 980px) {
+  .container .left .edit_text h1 {
+    height: 20vh !important; }
+
+  footer {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto !important;
+    margin-top: 60px; }
+    footer .copyright {
+      justify-items: center;
+      padding-right: 0 !important;
+      margin: 50px 0 30px 0;
+      font-size: 20px !important; }
+    footer .links {
+      margin-top: 40px;
+      font-size: 22px !important;
+      text-align: center;
+      display: grid !important;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    footer .socials {
+      width: 100%;
+      font-size: 20px !important;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+
+  .edit p {
+    font-size: 20px !important; }
+
+  .goo {
+    font-size: 45px !important; }
+
+  body .container .mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    body .container .mobile .info__mb {
+      margin-top: 40px;
+      width: 100% !important; }
+      body .container .mobile .info__mb img {
+        width: 400px !important;
+        max-width: 80%; }
+      body .container .mobile .info__mb .qrscan {
+        display: none !important; }
+
+  .edit p {
+    font-size: 20px !important; }
+
+  .goo {
+    font-size: 45px !important; }
+
+  body .container {
+    padding: 7.5vh 2% 0 2% !important; } }
+@media screen and (max-width: 450px) {
+  .goo {
+    font-size: 60px !important; } }
 
 /*# sourceMappingURL=media.css.map */

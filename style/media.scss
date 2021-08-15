@@ -38,9 +38,13 @@
     }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1180px){
     html{
         overflow: scroll;
+    }
+
+    .popup{
+        position: fixed !important;
     }
 
     html::-webkit-scrollbar-track{
@@ -121,5 +125,90 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 980px){
+
+    .container .left .edit_text h1 {
+        height: 20vh !important;
+    }
+
+    footer{
+        display: flex !important;
+        flex-direction: column-reverse;
+        height: auto !important;
+        margin-top: 60px;
+
+        .copyright{
+            justify-items: center;
+            padding-right: 0 !important;
+            margin: 50px 0 30px 0;
+            font-size: 20px !important;
+        }
+
+        .links{
+            margin-top: 40px;
+            font-size: 22px !important;
+            text-align: center;
+            display: grid !important;
+            justify-content: center;
+        }
+
+        .socials{
+            width: 100%;
+            font-size: 20px !important;
+            justify-content: center;
+        }
+    }
+
+    .edit p {
+        font-size: 20px !important;
+    }
+
+    .goo {
+        font-size: 45px !important;
+    }
+
+    body{
+        .container{
+            .mobile{
+                display: flex !important;
+                flex-direction: column-reverse;
+                
+                .info__mb{
+                    margin-top: 40px;
+                    width: 100% !important;
+
+                    img{
+                        width: 400px !important;
+                        max-width: 80%;
+                    }
+
+                    .qrscan{
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    } 
+    
+    .edit p {
+        font-size: 20px !important;
+    }
+
+    .goo {
+        font-size: 45px !important;
+    }
+
+    body .container {
+        padding: 7.5vh 2% 0 2% !important;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .goo{
+    font-size: 60px !important;
+
     }
 }
