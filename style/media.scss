@@ -1,0 +1,125 @@
+@media screen and (max-width: 1500px){
+    body{
+        .container{
+
+            .left{
+
+                .info{
+                }
+
+                .edit_text{
+                    height: 40% !important;
+                }
+            }
+        }
+    }
+
+    .edit{
+        p{
+            font-size: 13px !important;
+        }
+    }
+
+    .goo{
+        font-size: 24px !important;
+    }
+
+    .container .left .edit_text h1 {
+        max-height: 20vh !important;
+    }
+
+    .container .left .info img {
+        width: 15% !important;
+    }
+
+    footer{
+        font-size: 12px;
+        grid-template-columns: 50% 20% 30% !important;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    html{
+        overflow: scroll;
+    }
+
+    html::-webkit-scrollbar-track{
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    html::-webkit-scrollbar{
+        width: 2px;
+    }
+
+    html::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background: #fafafa;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    html:hover::-webkit-scrollbar-thumb{
+        background: rgba(230, 230, 230, 0.809);
+    }
+
+    body{
+        .container{
+            grid-template-columns: 100%;
+
+            .mobile{
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                grid-template-columns: 50% 50%;
+
+                .info__mb{
+                    display: grid !important;
+
+                    div{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+        
+                        a{
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+        
+                    img{
+                        width: 40%;
+                        min-width: 190px;
+                        margin-top: 20px;
+                    }
+        
+                    .appstore:hover,.googleplay:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .left{
+                flex-direction: row;
+
+                .info{
+                    display: none;
+                }
+
+                .edit_text{
+                    height: 100% !important;
+                    width: 100%;
+                    h1{
+                        max-height: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
