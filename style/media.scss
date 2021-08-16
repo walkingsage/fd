@@ -121,6 +121,10 @@
                     width: 100%;
                     h1{
                         max-height: 100% !important;
+
+                        .goo{
+                            font-size: 45px;
+                        }
                     }
                 }
             }
@@ -206,9 +210,9 @@
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 800px){
     .goo{
-    font-size: 60px !important;
+        font-size: 38px !important;
 
     }
 }
