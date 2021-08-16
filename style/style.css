@@ -104,7 +104,7 @@ body {
   display: grid;
   justify-items: center;
   background-color: white;
-  width: 100vw; }
+  width: 100%; }
   .popup #exit {
     position: absolute;
     width: 40px;

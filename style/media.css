@@ -133,3 +133,9 @@
 @media screen and (max-width: 800px) {
   .goo {
     font-size: 38px !important; } }
+@media screen and (max-width: 650px) {
+  footer {
+    padding: 0 10px !important; }
+
+  .goo {
+    font-size: 26px !important; } }
