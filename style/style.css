@@ -170,7 +170,7 @@ body {
   max-height: 100vh; }
 
 .aurem .header__content p {
-  margin-bottom: 0 !important; }
+  margin-bottom: 20px !important; }
 
 .aurem .header__content .about {
   align-self: start; }
@@ -190,10 +190,6 @@ body {
 
 .aurem .header__content .conditions__text .contant a {
   color: #00a2ff; }
-
-.aurem .header__content .conditions__text .contant__imprint {
-  display: grid;
-  grid-row-gap: 20px; }
 
 .aurem .header__content .conditions__text .contant__imprint .contant__sub {
   display: grid;

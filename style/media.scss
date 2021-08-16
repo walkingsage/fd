@@ -123,10 +123,22 @@
                         max-height: 100% !important;
 
                         .goo{
-                            font-size: 45px;
+                            font-size: 45px !important;
                         }
                     }
                 }
+            }
+        }
+    }
+
+    footer{
+        .copyright{
+            font-size: 11px !important;
+        }
+
+        .links{
+            p{
+                font-size: 11px !important;
             }
         }
     }
@@ -225,5 +237,18 @@
     .goo {
         font-size: 26px !important;
     }
+
+    body .container .left .edit_text h1 .goo {
+        font-size: 26px !important;
+    }
+
+    body .container .mobile .info__mb {
+        width: 75% !important;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    
 }
 

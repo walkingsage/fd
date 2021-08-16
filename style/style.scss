@@ -227,7 +227,7 @@ body {
     box-sizing: border-box;
     max-height: 100vh; }
     .aurem .header__content p {
-      margin-bottom: 0 !important; }
+      margin-bottom: 20px !important; }
     .aurem .header__content .about {
       align-self: start; }
       .aurem .header__content .about .subtitle {
@@ -242,15 +242,13 @@ body {
         grid-row-gap: 10px; }
         .aurem .header__content .conditions__text .contant a {
           color: #00a2ff; }
-      .aurem .header__content .conditions__text .contant__imprint {
-        display: grid;
-        grid-row-gap: 20px; }
         .aurem .header__content .conditions__text .contant__imprint .contant__sub {
           display: grid;
           grid-row-gap: 10px; }
         .aurem .header__content .conditions__text .contant__imprint ul li {
           list-style-type: circle;
           margin-left: 35px; }
+
 
 footer{
     display: grid;
