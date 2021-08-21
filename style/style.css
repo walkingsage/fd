@@ -238,4 +238,27 @@ footer {
     footer .socials .fa-twitter {
       padding-left: 30px; }
 
+#cookie_notification {
+  position: absolute;
+  align-self: end;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 30px 10px;
+  display: none; }
+  #cookie_notification .text {
+    font-weight: 500;
+    padding: 0 40px; }
+  #cookie_notification button {
+    white-space: nowrap;
+    margin-right: 50px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 0px;
+    border: none;
+    background: #34304c;
+    color: #ffffff; }
+
+.show {
+  display: flex; }
+
 /*# sourceMappingURL=style.css.map */
